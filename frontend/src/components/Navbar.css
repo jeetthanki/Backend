@@ -1,0 +1,102 @@
+/* 🔷 Navbar Container */
+.navbar {
+  width: 100%;
+  height: 70px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* background: linear-gradient(135deg, #0f172a, #1e293b); */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* 🔷 Action Container */
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+/* 🔷 User Info Section */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* 👤 Username Text */
+.user-info p {
+  color: #e2e8f0;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* 🔴 Logout Button */
+.danger {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: white;
+
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.danger:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(239, 68, 68, 0.4);
+}
+
+/* Active Click Effect */
+.danger:active {
+  transform: scale(0.95);
+}
+
+.theme-btn {
+  margin-right: 20px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+
+  transition: all 0.3s ease;
+}
+
+.theme-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(34, 197, 94, 0.4);
+}
+
+.theme-btn:active {
+  transform: scale(0.95);
+}
+
+body.light .navbar {
+  background: linear-gradient(135deg, #e2e8f0, #cbd5f5);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+body.light .user-info p {
+  color: #0f172a;
+}
+.nav-links {
+  display: flex;
+  gap: 15px;
+  font-size: 22px;
+  font-weight: 500;
+}
